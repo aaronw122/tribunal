@@ -10,8 +10,8 @@ A one-shot adversarial analysis loop. Give it any question, claim, bug hypothesi
 **Usage:**
 - `/tribunal <question or issue description>`
 - `/tribunal Why is the API returning 500s on the /users endpoint?`
-- `/tribunal Should we use WebSockets instead of polling for real-time updates?`
-- `/tribunal Is this race condition actually possible in our auth flow?`
+
+* `/tribunal Is this race condition actually possible in our auth flow?`
 
 **Arguments:** `$ARGUMENTS`
 
@@ -48,7 +48,8 @@ Prompt framing:
 > **{$ARGUMENTS}**
 >
 > Your job:
-> 1. Research the question by reading relevant code, configs, logs, docs — whatever is needed
+>
+> 1. Research the question by reading relevant code, configs, logs, internet, docs — whatever is needed
 > 2. Build a clear, evidence-based analysis
 > 3. State your conclusion with confidence level (high / medium / low)
 > 4. For each claim, cite specific evidence (file paths, line numbers, code snippets, error messages)
